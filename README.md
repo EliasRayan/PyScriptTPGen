@@ -1,6 +1,8 @@
 # PyScriptTPGen
 Générateur de "feuilles de TP" au format html pour mes étudiants de tutorat, avec des REPL Python. Aucune installation requise.
 
+##Pour tester : exécuter example.html dans votre navigateur
+
 Deux versions : 
 - Script Python classique générant directement un fichier html
 - Notebook plus "intuitif" qui affiche (entre autres) le code HTML final mais ne crée pas de fichier
