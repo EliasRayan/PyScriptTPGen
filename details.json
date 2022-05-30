@@ -1,0 +1,15 @@
+{
+    "env": [
+        "matplotlib,numpy"
+    ],
+    "page_title": "Bases de Python",
+    "doc_title": [
+        "Exercices de base"
+    ],
+    "credits": [
+        "Elias Aliche <br><a href=\"https://www.google.fr\">https://www.google.fr</a>"
+    ],
+    "doc_description": [
+        "Petits exercices faciles pour commencer"
+    ]
+}

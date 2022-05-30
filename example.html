@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Bases de Python</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+<style>
+#hidden{visibility: hidden;}
+.repl_tips_p{background-color: rgba(173, 216, 230, 0.3);}
+.repl_answer_p{background-color: rgba(171, 246, 58, 0.3);}
+</style>
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<script>
+	function show_hidden_p(id){
+		let p = document.getElementById(id);
+		p.removeAttribute("hidden");
+}
+</script>
+</head>
+<body style="font-size: 20px; background: black;">
+<!-- ENV here-->
+<py-env>
+- matplotlib
+- numpy
+
+</py-env>
+<div class="jumbotron" id="repl_question_div">
+<div class="container">
+<h1 id="doc_title">Exercices de base</h1><br>
+<h3 id="credits" style="color:blue">Elias Aliche <br><a href="https://www.google.fr">https://www.google.fr</a></h3><br>
+<h2 id="doc_description">Petits exercices faciles pour commencer</h2><br>
+<!-- REPL here-->
+<p class="repl_question_p"><b>Question 1.1</b>:<br> How to print hello world ?</p>
+<div>
+<py-repl auto-generate="false"></py-repl>
+</div>
+<button class="btn btn-info" onclick="show_hidden_p('tips0')"> Show tips </button>
+<p class="repl_tips_p" id="tips0" hidden>Use the print function</p>
+<button class="btn btn-info" onclick="show_hidden_p('answer0')"> Show answer</button><br>
+<p class="repl_answer_p" id="answer0" hidden>print("Hello World!")</p>
+<br><p class="repl_question_p"><b>Question 1.2</b>:<br> How to print hello world 3 times<br>Use a for loop.</p>
+<div>
+<py-repl auto-generate="false"></py-repl>
+</div>
+<button class="btn btn-info" onclick="show_hidden_p('tips1')"> Show tips </button>
+<p class="repl_tips_p" id="tips1" hidden>Use the range function</p>
+<button class="btn btn-info" onclick="show_hidden_p('answer1')"> Show answer</button><br>
+<p class="repl_answer_p" id="answer1" hidden>for i in range(0,3):<br>&emsp;print("Hello World!")</p>
+<br><p class="repl_question_p"><b>Question 2.1</b>:<br> Create a function to get the max of two numbers</p>
+<div>
+<py-repl auto-generate="false"></py-repl>
+</div>
+<button class="btn btn-info" onclick="show_hidden_p('tips2')"> Show tips </button>
+<p class="repl_tips_p" id="tips2" hidden>It's difficult to find an easier function than this one...</p>
+<button class="btn btn-info" onclick="show_hidden_p('answer2')"> Show answer</button><br>
+<p class="repl_answer_p" id="answer2" hidden>def maximum(a, b):<br>&emsp;if a >= b:<br>&emsp;&emsp;return a<br>&emsp;return b</p>
+<br></div>
+</div>
+</body>
+</html>

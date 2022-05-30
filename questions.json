@@ -1,0 +1,40 @@
+{
+    "questions": [
+      {
+        "num": "1.1",
+        "question": [
+          "How to print hello world ?"
+        ],
+        "tips": [
+          "Use the print function"
+        ],
+        "answer": [
+          "print(\"Hello World!\")"
+        ]
+      },
+      {
+        "num": "1.2",
+        "question": [
+          "How to print hello world 3 times\nUse a for loop."
+        ],
+        "tips": [
+          "Use the range function"
+        ],
+        "answer": [
+          "for i in range(0,3):\n\tprint(\"Hello World!\")"
+        ]
+      },
+      {
+        "num": "2.1",
+        "question": [
+          "Create a function to get the max of two numbers"
+        ],
+        "tips": [
+          "It's difficult to find an easier function than this one..."
+        ],
+        "answer": [
+          "def maximum(a, b):\n\tif a >= b:\n\t\treturn a\n\treturn b"
+        ]
+      }
+    ]
+}
